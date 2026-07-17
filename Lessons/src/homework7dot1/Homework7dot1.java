@@ -58,23 +58,15 @@ public class Homework7dot1 {
         System.out.println("Найбільший елемент: " + maxNumber + " (з індексом " + maxIndex + ")");
 
         //Середнє арифметичне чисел після першого від'ємного числа
-        // Середнє арифметичне чисел після першого від'ємного числа
-
         for (int i = 0; i < numbers.length; i++) {
             if (numbers[i] < 0) {
                 negativeIndex = i;
                 break;
             }
         }
-
-        if (negativeIndex == -1) {
-            System.out.println("Від'ємних чисел немає");
-        } else {
         for (int i = negativeIndex + 1; i < numbers.length; i++) {
                 afterNegativeSum += numbers[i];
                 afterNegativeCounter++;
-            }
-        System.out.printf("Середнє арифметичне чисел після першого від'ємного числа: %.2f%n", afterNegativeSum / afterNegativeCounter);
             }
         }
     }
