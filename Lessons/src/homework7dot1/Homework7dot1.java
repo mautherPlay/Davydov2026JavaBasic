@@ -11,7 +11,6 @@ public class Homework7dot1 {
         int minIndex = 0;
         int maxIndex = 0;
         int negativeIndex = -1;
-        int afterNegativeIndex = 0;
         double afterNegativeSum = 0;
         int afterNegativeCounter = 0;
 
