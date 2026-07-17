@@ -11,6 +11,7 @@ public class Homework7dot1 {
         int minIndex = 0;
         int maxIndex = 0;
         int negativeIndex = -1;
+        int afterNegativeIndex = 0;
         double afterNegativeSum = 0;
         int afterNegativeCounter = 0;
 
@@ -64,9 +65,17 @@ public class Homework7dot1 {
                 break;
             }
         }
+
+            if (negativeIndex == -1) {
+        System.out.println("Від'ємних чисел немає");
+            } else {
         for (int i = negativeIndex + 1; i < numbers.length; i++) {
                 afterNegativeSum += numbers[i];
                 afterNegativeCounter++;
             }
+            if (afterNegativeCounter > 0) {
+        System.out.printf("Середнє арифметичне чисел після першого від'ємного числа: %.2f%n", afterNegativeSum / afterNegativeCounter);
+            }
         }
     }
+}
