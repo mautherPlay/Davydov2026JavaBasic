@@ -70,7 +70,7 @@ public class Homework7dot1 {
         if (negativeIndex == -1) {
             System.out.println("Від'ємних чисел немає");
         } else {
-            for (int i = negativeIndex + 1; i < numbers.length; i++) {
+        for (int i = negativeIndex + 1; i < numbers.length; i++) {
                 afterNegativeSum += numbers[i];
                 afterNegativeCounter++;
             }
